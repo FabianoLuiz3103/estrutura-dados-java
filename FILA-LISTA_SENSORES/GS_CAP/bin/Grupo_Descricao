@@ -1,0 +1,40 @@
+Usar esse arquivo para:
+
+	1) Identificar os membros do grupo
+	Eduardo Henriques Bertelli -------- RM:92966
+    Fabiano Luiz Santos de Santana ---- RM:96044
+    Luigi de Lima Galati -------------- RM:95618   
+	
+	2) Apresentar a descrição do projeto desenvolvido
+	
+O projeto “AgriBrain” é responsável por fazer a análise de sensores presentes em plantações de soja. Os sensores fazem a coleta de dados sobre o pH do solo e sobre os macronutrientes essenciais para o cultivo da soja, são eles: Nitrogênio (N), fósforo (P), potássio (K), Cálcio (Ca), magnésio (Mg) e enxofre (S). A importância de cada dado coletado:
+pH: Um nível adequado de pH no solo assegura disponibilidade de nutrientes e maximiza produtividade;
+Nitrogênio: Atua na fotossíntese das plantas, na síntese de proteínas, na retenção de vagens, no peso dos grãos e na porcentagem do óleo da soja.
+Fósforo: Responsável pelo armazenamento e fornecimento de energia para a planta. Ele atua na fotossíntese, respiração e na produção de proteínas da cultura da soja - além de estimular o crescimento e a nodulação das raízes
+Potássio: Atua na formação e no transporte de açúcares no interior da planta e no enchimento de grãos. O nutriente é o responsável pelo uso da água e ajuda a planta a tolerar a deficiência hídrica.
+Cálcio: Faz parte da parede celular da planta de soja e é fundamental para o crescimento da lavoura, além disso melhora o florescimento e é essencial para o crescimento e desenvolvimento das raízes.
+Magnésio: Atua na fotossíntese, é ativador enzimático e auxilia na absorção de fósforo. Além disso, o nutriente aumenta a produção de proteína.
+Enxofre: Atua na formação dos grãos e está ligado à síntese de proteínas e vitaminas.
+Segundo a Embrapa (Empresa Brasileira de Pesquisa Agropecuária) na publicação “tecnologias de produção de soja” ISSN 2176-2902 junho, 2020 esses são os valores mínimos e máximos em g/Kg para os macronutrientes:
+Nitrogênio: Mínimo 45 e Máximo 65
+Fósforo: Mínimo 2 e Máximo 4
+Potássio: Mínimo 18 e Máximo 25
+Cálcio: Mínimo 6 e Máximo 10
+Magnésio: Mínimo 2 e Máximo 5
+Enxofre: Mínimo 2 e Máximo 4
+Valores fora dessa faixa representam um risco para a produção e o “AgriBrain” separa os sensores com mais de 3 parâmetros fora do ideal e os manda para uma fila onde serão analisados individualmente. Como resultado da análise os sensores podem ser mandados para uma equipe de reparos rápidos que vão regular a adubagem, irrigação etc.; ou podem ser mandados para uma equipe de pesquisa e reparos longos por ser um caso mais grave e complexo.
+Para a aplicação o pH foi escolhido como parâmetro principal, já que ele afeta diretamente o desenvolvimento e a produtividade da plantação. O pH do solo influencia a disponibilidade de todos macronutrientes citados acima. Como parâmetro principal os sensores são ordenados de forma crescente, indo do menor valor de pH até o maior, sendo assim, se for necessário uma análise direta da lista vai ser mais fácil ir pelos sensores com valores de pH extremamente baixos até os maiores.
+No menu principal são cinco opções sendo elas: 
+<0>: PARA EXIBIR SENSORES REGISTRADOS;
+Exibe os sensores que já estão registrados no sistema (lista de sensores).
+<1>: PARA ADICIONAR NOVOS SENSORES;
+Adiciona novos sensores no sistema (mesma lista da opção <0>).
+<2>: PARA CONSULTAR UM SENSOR ESPECÍFICO;
+Consulta no sistema (lista de sensores), através das coordenadas um sensor específico, mostrando dos seus parâmetros.
+<3>: PARA VERIFICAR PARÂMETROS (DENTRO DO NORMAL/FORA DO NORMAL) DOS SENSORES;
+Exibe todos os sensores e mostra em todos os parâmetros de cada sensor se o valor está dentro do normal ou não. Logo após é perguntado se o usuário deseja ver quais sensores tem mais de três parâmetros fora do normal e é exibido uma mensagem avisando que esses sensores foram enviados para a fila de análise; o usuário vai ter em seguida a opção de já fazer a análise da fila ou não (voltar para o menu principal). 
+<4>: PARA VERIFICAR A FILA DE ANÁLISE;
+Pergunta se o usuário deseja verificar os parâmetros de cada sensor individualmente ou se deseja sair da análise, com a resposta positiva o sistema apresenta o sensor e seus parâmetros e pergunta se é possível fazer reajustes de curto tempo, de longo tempo ou se o usuário deseja sair da análise; enquanto o usuário não sair da análise e ele for “tratando” cada sensor o sistema vai chamando o próximo da fila até ela esvaziar. Com a fila vazia é apresentada uma única opção que é a de voltar para o menu inicial. Em ambas as opções de sair da análise, caso tenha sensores na fila o sistema avisará já que o usuário vai poder utilizar as outras funcionalidades (menos encerrar) e voltar para a análise posteriormente.
+<X>: PARA ENCERRAR O PROGRAMA.
+Encerra o programa somente se a fila de análise estiver vazia!
+	
